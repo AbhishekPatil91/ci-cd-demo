@@ -5,6 +5,12 @@ res.json({
 message: "CI/CD Pipeline is Working!"
 });
 });
+
+app.get("version", (req, res) => {
+    res.json({
+        version: "1.0.0"
+    });
+});
 app.get("/health", (req, res) => {
 res.status(200).json({
 status: "OK"
